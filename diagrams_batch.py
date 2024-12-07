@@ -6,7 +6,7 @@ from diagrams.aws.network import ELB
 
 with Diagram("Grouped Workers", show=False, direction="TB", outformat="svg"):
     
-    with Cluster("Step 1",graph_attr={'margin':0}):
+    with Cluster("Step 1",graph_attr={'margin':'20','lwidth':'200'}):
        glue1 = Glue("hsuadhususahdusahdu",nodeid="xablau",href="xablau", target="_blank") 
        glue2 = Glue("hsuadhususahdusahdu",nodeid="xablau2",href="xablau", target="_blank") 
 
