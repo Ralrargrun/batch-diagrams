@@ -30,7 +30,7 @@ with Diagram("DSL Diagram", show=False, direction="LR", outformat="svg"):
         i = total_steps - index
 
         # Criando cluster para cada step
-        with Cluster(f"Step {i}:  " + step_id,direction="RL",graph_attr={'margin': "30","fontsize": "20"}):
+        with Cluster(f"Step {i}:  " + step_id,direction="RL",graph_attr={'margin': "30","fontsize": "20","fontcolor": "black"}):
             nodes = []
             for task in tasks:
                 runtime_name = task["runtimeName"]
