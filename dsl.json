@@ -1,0 +1,161 @@
+{
+    "runtimes": [
+        {
+            "name": "jp7g",
+            "type": "glue"
+        },
+        {
+            "name": "jp7s",
+            "type": "lambda"
+        }
+    ],
+    "schedulerRoutines": [
+        {        
+            "cron": "0 6 ** *",
+            "dependson": "None",
+            "executionName" : "JP700001",
+            "priority": "medium",
+            "provisioning": "manual",
+            "steps": 
+            [
+                {
+                    "stepId": "JP700001-1",
+                    "tasks'": [
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam: :076473262157: role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7g",
+                            "taskId": "JP7G001G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7g",
+                            "taskId": "JP7F002G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S001G"
+                        }
+                    ]
+                },
+                {
+                    "stepId": "JP700001-2",
+                    "tasks'": [
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinal",
+                                "PARM2": "arn:aws:iam: :076473262157: role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7g",
+                            "taskId": "JP7G003G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinal",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7g",
+                            "taskId": "JP7G004G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinal",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S002G"
+                        }
+                    ]
+                },
+                {
+                    "stepId": "JP700001-3",
+                    "tasks'": [
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam: :076473262157: role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7g",
+                            "taskId": "JP7G005G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7g",
+                            "taskId": "JP7G006G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S003G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S004G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S005G"
+                        }
+                    ]
+                },
+                {
+                    "stepId": "JP700001-4",
+                    "tasks'": [
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S006G"
+                        },
+                        {
+                            "parameters": 
+                            {
+                                "PARM1": "estrategiasrecupcredito-jobtempfinalclie",
+                                "PARM2": "arn:aws:iam::076473262157:role/role-devops1-tradops"
+                            },
+                            "runtimeName": "jp7s",
+                            "taskId": "JP7S007G"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
